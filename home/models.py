@@ -4,4 +4,10 @@ from wagtail.models import Page
 
 
 class HomePage(Page):
-    pass
+    
+    subtitle = models.CharField(
+        max_length=100,
+        blank=True,
+        null=True
+        
+)
